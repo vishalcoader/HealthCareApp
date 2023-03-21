@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/h17"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:paddingVertical="20dp"
+        android:layout_height="wrap_content"
+        android:text="24*7 Health care"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="30sp"
+        android:paddingVertical="20dp"
+        android:textColor="#D10A0A"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="137dp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="270dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/anim1"
+        app:lottie_loop="true" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableLeft="@drawable/person1"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:hint="User name"
+        android:drawablePadding="20dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/edittext_back"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/lock1"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:textColorHint="#fff"
+        android:hint="Password"
+        android:textColor="#fff"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/edittext_back"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="261dp" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_gravity="left"
+        android:textColor="#fff"
+        android:text="Remember me"
+        android:textSize="16sp"
+        android:id="@+id/chek_login"
+        android:textStyle="bold"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_login"
+        android:layout_width="250dp"
+        android:backgroundTint="#DA0909"
+        android:layout_height="54dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittext_back"
+        android:text="Login"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="517dp" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:gravity="center_horizontal"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_marginTop="30dp"
+           android:textStyle="normal"
+           android:text="Don't have account ?"
+           android:textColor="#fff"
+           android:textSize="20sp"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_marginTop="30dp"
+           android:textStyle="bold"
+           android:id="@+id/sign_in"
+           android:text=" Sign in"
+           android:textColor="#FF5722"
+           android:textSize="25sp"
+           />
+
+   </LinearLayout>
+
+</LinearLayout>

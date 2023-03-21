@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".CartLabActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Deliver Location : Pune"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="#fff"
+        android:background="@color/black"
+        android:padding="5dp"
+        android:textSize="22sp"
+        android:paddingVertical="5dp"
+        android:id="@+id/cardlab_location"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Lab Test and Packages"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="#FFEB3B"
+        android:textSize="26sp"
+        android:background="@color/black"
+        android:paddingVertical="5dp"
+        android:id="@+id/cartlab_package"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:layout_width="350dp"
+        android:layout_height="370dp"
+        android:id="@+id/cardlab_listview"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_margin="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total cost : 299/-"
+        android:padding="5dp"
+        android:paddingHorizontal="5dp"
+        android:textSize="18sp"
+        android:background="#1130DA"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/cartlab_price"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:textSize="16sp"
+            android:id="@+id/cartlab_setdate_tv"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dd/mm/yyyy"
+            android:textSize="17sp"
+            android:padding="5dp"
+            android:background="#9C27B0"
+            android:id="@+id/cartlab_date"
+            android:textColor="#fff"
+            android:layout_below="@+id/cartlab_setdate_tv"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/cartlab_setdate_tv"
+
+            android:id="@+id/cardlab_settime_tv"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HH : MM"
+            android:padding="5dp"
+            android:background="#9C27B0"
+            android:textSize="17sp"
+            android:id="@+id/cartlab_time"
+            android:layout_toRightOf="@+id/cartlab_setdate_tv"
+            android:textColor="#fff"
+            android:layout_below="@+id/cardlab_settime_tv"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:layout_marginStart="20dp"
+            android:id="@+id/cardlab_back"
+            android:backgroundTint="#EA1717"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:layout_marginStart="130dp"
+            android:layout_toRightOf="@+id/cardlab_back"
+            android:id="@+id/cartlab_chekout"
+            android:backgroundTint="#05AC0B"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

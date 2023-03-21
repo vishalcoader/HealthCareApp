@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#100C0C"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetailActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="24 * 7 Healthcare"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:id="@+id/finddoctor_tv1"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Order Detail"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="#EC276A"
+        android:textSize="23sp"
+        android:paddingVertical="5dp"
+        android:background="#000"
+        android:id="@+id/orderdetail_tv2"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:layout_width="360dp"
+        android:layout_height="500dp"
+        android:id="@+id/orderdetail_listview"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_margin="10dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:id="@+id/orderdetail_back_btn"
+        android:backgroundTint="#EA1717"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

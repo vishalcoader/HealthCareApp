@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/k2"
+    android:gravity="center"
+    tools:context=".AppointmentActivity"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/appoint_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Appointment"
+        android:layout_marginTop="10dp"
+        android:textSize="33sp"
+        android:textColor="#fff"
+        android:backgroundTint="@color/black"
+        android:padding="5dp"
+        android:paddingHorizontal="10dp"
+        android:background="@drawable/edittext_back"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+
+
+    <EditText
+        android:id="@+id/appoint_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableLeft="@drawable/person1"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:layout_marginHorizontal="30dp"
+        android:hint=" Full name"
+        android:textColorHint="#fff"
+        android:background="@drawable/edittext_back"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <EditText
+        android:id="@+id/appoint_address"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/address"
+        android:paddingLeft="10dp"
+        android:textColorHint="#fff"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/edittext_back"
+        android:hint="Address"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="261dp" />
+    <EditText
+        android:id="@+id/appoint_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:drawableStart="@drawable/contact"
+        android:drawablePadding="10dp"
+        android:inputType="number"
+        android:paddingTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_back"
+        android:hint="Contact Number"
+        android:textColorHint="#F8F7F6"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="261dp"
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/appoint_fee"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/person1"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textColorHighlight="#fff"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/edittext_back"
+        android:hint="Fees"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="261dp" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Date"
+        android:textSize="16sp"
+        android:id="@+id/appoint_setdate_tv"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dd/mm/yyyy"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:background="#9C27B0"
+        android:id="@+id/appoint_date"
+        android:textColor="#fff"
+        android:layout_below="@+id/appoint_setdate_tv"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Time"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/appoint_setdate_tv"
+
+        android:id="@+id/appoint_settime_tv"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HH : MM"
+        android:padding="5dp"
+        android:background="#9C27B0"
+        android:textSize="17sp"
+        android:id="@+id/appoint_time"
+        android:layout_toRightOf="@+id/appoint_date"
+        android:textColor="#fff"
+        android:layout_below="@+id/appoint_settime_tv"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Apppointment"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:id="@+id/appoint_register"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="#0A980F"
+        android:background="@drawable/edittext_back"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:id="@+id/appoint_back"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="#BD0D22"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext_back"
+        />
+
+
+
+</LinearLayout>
